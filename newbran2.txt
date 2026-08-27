@@ -1,2 +1,0 @@
-helle trial version
-git push oriig
