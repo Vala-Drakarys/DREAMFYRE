@@ -1,0 +1,22 @@
+{
+  "DEL-BOM": 0.05,
+  "DEL-CCU": 0.05,
+  "DEL-BLR": 0.05,
+  "DEL-HYD": 0.05,
+  "BOM-DEL": 0.05,
+  "BOM-CCU": 0.05,
+  "BOM-BLR": 0.05,
+  "BOM-HYD": 0.05,
+  "CCU-DEL": 0.05,
+  "CCU-BOM": 0.05,
+  "CCU-BLR": 0.05,
+  "CCU-HYD": 0.05,
+  "BLR-DEL": 0.05,
+  "BLR-BOM": 0.05,
+  "BLR-CCU": 0.05,
+  "BLR-HYD": 0.05,
+  "HYD-DEL": 0.05,
+  "HYD-BOM": 0.05,
+  "HYD-CCU": 0.05,
+  "HYD-BLR": 0.05
+}

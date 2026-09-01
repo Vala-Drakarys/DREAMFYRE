@@ -1,0 +1,64 @@
+{
+  "schema_status": "Exact old record schema and list-based JSON structure preserved",
+  "cities": {
+    "DEL": "Delhi",
+    "BOM": "Mumbai",
+    "CCU": "Kolkata",
+    "BLR": "Bengaluru",
+    "HYD": "Hyderabad"
+  },
+  "directional_route_count": 20,
+  "routes": [
+    "DEL-BOM",
+    "DEL-CCU",
+    "DEL-BLR",
+    "DEL-HYD",
+    "BOM-DEL",
+    "BOM-CCU",
+    "BOM-BLR",
+    "BOM-HYD",
+    "CCU-DEL",
+    "CCU-BOM",
+    "CCU-BLR",
+    "CCU-HYD",
+    "BLR-DEL",
+    "BLR-BOM",
+    "BLR-CCU",
+    "BLR-HYD",
+    "HYD-DEL",
+    "HYD-BOM",
+    "HYD-CCU",
+    "HYD-BLR"
+  ],
+  "date_range": [
+    "2026-07-29",
+    "2026-08-27"
+  ],
+  "days": 30,
+  "sources": [
+    "Air India",
+    "EaseMyTrip",
+    "Cleartrip"
+  ],
+  "booking_windows": [
+    "T+1",
+    "T+7",
+    "T+15",
+    "T+30",
+    "T+45"
+  ],
+  "json_files": 9000,
+  "fare_records": 36000,
+  "records_per_file": 4,
+  "seeded_anomaly_records": 609,
+  "weighting_design": {
+    "booking_window_weights": "Stored separately in config/booking_window_weights.json",
+    "route_weights": "Stored separately in config/route_weights.json",
+    "route_weight_method": "Equal-weight baseline: 1/20 = 0.05 per directional route. Replace with verified traffic-based weights later if a validated source is adopted."
+  },
+  "improvement_notes": [
+    "Raw fare schema was not expanded; compatibility with the old structure was prioritised.",
+    "Weights are separated from raw observations so methodology can change without regenerating fare data.",
+    "Synthetic anomalies remain unlabelled to allow the ETL outlier detector to perform the detection."
+  ]
+}
